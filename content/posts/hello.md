@@ -1,9 +1,9 @@
 ---
-title: "Hello"
+title: "Hello World!"
 date: 2021-10-27T01:49:59Z
 # weight: 1
 # aliases: ["/first"]
-tags: ["first"]
+tags: ["Hello World"]
 author: "Jaehee Lee"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Desc Text."
+description: "Wow"
 # canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
