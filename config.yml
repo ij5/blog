@@ -71,13 +71,15 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: wow
+    Content: "This is my little blog"
 
   socialIcons:
     # - name: twitter
     #   url: "https://twitter.com/"
     # - name: stackoverflow
     #   url: "https://stackoverflow.com"
+    - name: email
+      url: "mailto:leej@ehee.me"
     - name: github
       url: "https://github.com/jhlee838"
 
