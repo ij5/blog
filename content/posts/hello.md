@@ -1,9 +1,9 @@
 ---
-title: "Test"
-date: 2021-10-27T01:17:58Z
+title: "Hello"
+date: 2021-10-27T01:49:59Z
 # weight: 1
 # aliases: ["/first"]
-tags: ["test"]
+tags: ["first"]
 author: "Jaehee Lee"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "test1234"
+description: "Desc Text."
 # canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: false
@@ -28,10 +28,7 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
-    URL: "https://github.com/jhlee838/blog/tree/master/content"
+    URL: "https://github.com/jhlee838/blog/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---
-# Hello World!
-## Heading 2
-wow
