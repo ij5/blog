@@ -1,5 +1,5 @@
 ---
-title: "Checklist for React Development"
+title: "React로 개발 시 알아두어야 할 것들"
 date: 2021-10-28T11:46:18Z
 # weight: 1
 # aliases: ["/first"]
