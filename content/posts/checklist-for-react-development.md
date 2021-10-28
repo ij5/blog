@@ -34,7 +34,6 @@ cover:
 ---
 
 
-# 개발 중 에러
 ## key 상속
 React의 key attribute는 상속되지 않는다.
 따라서 child component에서 key property를 사용할 수 없다.
