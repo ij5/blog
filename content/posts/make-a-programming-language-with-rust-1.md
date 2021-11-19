@@ -55,5 +55,5 @@ cover:
 
 ## Parser 제작
 ```rust
-
+lalrpop_mod!(pub grammar);
 ```
