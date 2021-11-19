@@ -54,6 +54,30 @@ cover:
 
 
 ## Parser 제작
+
+파서를 짜다보면 많은 문제가 발생한다. 먼저 관련 에러들을 정리하겠다.
+
+### ambiguity error
+소스 코드의 일부분:
 ```rust
-lalrpop_mod!(pub grammar);
+IfStatement: Box<Expr> = {
+    "if" "(" Parameters ")" ...
+};
+
+Identifier: String = <s:r"[_a-zA-Z][_a-zA-Z0-9]*"> => String::from(s);
 ```
+이때 anbiguity 에러가 발생하는데, if 키워드와 Identifier의 정규표현식이 중복되어 일어나는 문제인 것 같다.
+
+다음과 같이 해결한다.
+```rust
+IfStatement: Box<Expr> = {
+    "if" "(" Parameters ")" ...
+};
+
+Identifier: String = {
+    <s:r"[_a-zA-Z][_a-zA-Z0-9]*"> => String::from(s),
+    "if" => "if".to_owned(),
+};
+```
+여기서 to_owned는 clone과 비슷하지만 String을 반환하는 함수이다. 자세히는 나도 잘 모르겠다.
+
