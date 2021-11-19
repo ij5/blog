@@ -34,7 +34,7 @@
 <meta name=twitter:title content="Rust로 프로그래밍 언어 만들기 - 1">
 <meta name=twitter:description content="Desc Text.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://ehee.me/posts/"},{"@type":"ListItem","position":3,"name":"Rust로 프로그래밍 언어 만들기 - 1","item":"https://ehee.me/posts/make-a-programming-language-with-rust-1/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Rust로 프로그래밍 언어 만들기 - 1","name":"Rust로 프로그래밍 언어 만들기 - 1","description":"Desc Text.","keywords":["rust","programming-language"],"articleBody":"동기 중2~중3때 뭔가 멋져보여서 무작정 파이썬으로 프로그래밍 언어를 만들었던 기억이 있다. 당시 만든 언어는 파이썬으로 만든지라 매우 느리고 조잡했다. 지금 rust로 만들어도 조잡하겠지만, 프로그래밍 언어의 구조를 파악하고 이해한다는 것에 의미를 두어 다시 만들어보고자 한다.\nRust를 선택한 이유 별 거 없다. Rust를 배우기 시작한지 채 일주일도 지나지 않았고, 이 언어의 매력때문에 선택했다. 게다가 C/C++와 경쟁하는 언어답게 속도가 매우 빠르다!\nParser Generator 선택하기 파서를 직접 짜는 것은 매우 반복적이고 귀찮은 일이다. 그래서 나온게 parser generator인데, 이 라이브러리들은 반복적인 작업을 줄여준다. 대표적으로 yacc / bison 등이 있다.\n다음은 사용 후보에 오른 rust 라이브러리들이다.\n lalrpop nom pest  최종적으로 lalrpop을 선택했는데, 맨 처음에 발견한 라이브러리 이기도 하고 rust를 기반으로 제작된 많은 언어들(RustPython, gluon-lang 등)이 lalrpop을 사용하고 있기 때문이다.\nParser 제작 lalrpop_mod!(pub grammar); ","wordCount":"117","inLanguage":"en","image":"https://i.ibb.co/3NS8Dkv/image.png","datePublished":"2021-11-17T14:24:28Z","dateModified":"2021-11-17T14:24:28Z","author":{"@type":"Person","name":"Jaehee Lee"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ehee.me/posts/make-a-programming-language-with-rust-1/"},"publisher":{"@type":"Organization","name":"Jaehee Lee","logo":{"@type":"ImageObject","url":"https://ehee.me/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Rust로 프로그래밍 언어 만들기 - 1","name":"Rust로 프로그래밍 언어 만들기 - 1","description":"Desc Text.","keywords":["rust","programming-language"],"articleBody":"동기 중2~중3때 뭔가 멋져보여서 무작정 파이썬으로 프로그래밍 언어를 만들었던 기억이 있다. 당시 만든 언어는 파이썬으로 만든지라 매우 느리고 조잡했다. 지금 rust로 만들어도 조잡하겠지만, 프로그래밍 언어의 구조를 파악하고 이해한다는 것에 의미를 두어 다시 만들어보고자 한다.\nRust를 선택한 이유 별 거 없다. Rust를 배우기 시작한지 채 일주일도 지나지 않았고, 이 언어의 매력때문에 선택했다. 게다가 C/C++와 경쟁하는 언어답게 속도가 매우 빠르다!\nParser Generator 선택하기 파서를 직접 짜는 것은 매우 반복적이고 귀찮은 일이다. 그래서 나온게 parser generator인데, 이 라이브러리들은 반복적인 작업을 줄여준다. 대표적으로 yacc / bison 등이 있다.\n다음은 사용 후보에 오른 rust 라이브러리들이다.\n lalrpop nom pest  최종적으로 lalrpop을 선택했는데, 맨 처음에 발견한 라이브러리 이기도 하고 rust를 기반으로 제작된 많은 언어들(RustPython, gluon-lang 등)이 lalrpop을 사용하고 있기 때문이다.\nParser 제작 파서를 짜다보면 많은 문제가 발생한다. 먼저 관련 에러들을 정리하겠다.\nambiguity error 소스 코드의 일부분:\nIfStatement: BoxExpr = { \"if\" \"(\" Parameters \")\" ... }; Identifier: String = s:r\"[_a-zA-Z][_a-zA-Z0-9]*\" = String::from(s); 이때 anbiguity 에러가 발생하는데, if 키워드와 Identifier의 정규표현식이 중복되어 일어나는 문제인 것 같다.\n다음과 같이 해결한다.\nIfStatement: BoxExpr = { \"if\" \"(\" Parameters \")\" ... }; Identifier: String = { s:r\"[_a-zA-Z][_a-zA-Z0-9]*\" = String::from(s), \"if\" = \"if\".to_owned(), }; 여기서 to_owned는 clone과 비슷하지만 String을 반환하는 함수이다. 자세히는 나도 잘 모르겠다.\n","wordCount":"193","inLanguage":"en","image":"https://i.ibb.co/3NS8Dkv/image.png","datePublished":"2021-11-17T14:24:28Z","dateModified":"2021-11-17T14:24:28Z","author":{"@type":"Person","name":"Jaehee Lee"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ehee.me/posts/make-a-programming-language-with-rust-1/"},"publisher":{"@type":"Organization","name":"Jaehee Lee","logo":{"@type":"ImageObject","url":"https://ehee.me/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -95,7 +95,11 @@ Desc Text.
 <li>
 <a href=#parser-generator-%ec%84%a0%ed%83%9d%ed%95%98%ea%b8%b0 aria-label="Parser Generator 선택하기">Parser Generator 선택하기</a></li>
 <li>
-<a href=#parser-%ec%a0%9c%ec%9e%91 aria-label="Parser 제작">Parser 제작</a>
+<a href=#parser-%ec%a0%9c%ec%9e%91 aria-label="Parser 제작">Parser 제작</a><ul>
+<li>
+<a href=#ambiguity-error aria-label="ambiguity error">ambiguity error</a>
+</li>
+</ul>
 </li>
 </ul>
 </div>
@@ -117,8 +121,25 @@ Desc Text.
 </ul>
 <p>최종적으로 <a href=https://crates.io/crates/lalrpop>lalrpop</a>을 선택했는데, 맨 처음에 발견한 라이브러리 이기도 하고 rust를 기반으로 제작된 많은 언어들(RustPython, gluon-lang 등)이 lalrpop을 사용하고 있기 때문이다.</p>
 <h2 id=parser-제작>Parser 제작<a hidden class=anchor aria-hidden=true href=#parser-제작>#</a></h2>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust>lalrpop_mod<span style=color:#f92672>!</span>(<span style=color:#66d9ef>pub</span> grammar);
-</code></pre></div>
+<p>파서를 짜다보면 많은 문제가 발생한다. 먼저 관련 에러들을 정리하겠다.</p>
+<h3 id=ambiguity-error>ambiguity error<a hidden class=anchor aria-hidden=true href=#ambiguity-error>#</a></h3>
+<p>소스 코드의 일부분:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust>IfStatement: Box<span style=color:#f92672>&lt;</span>Expr<span style=color:#f92672>&gt;</span> <span style=color:#f92672>=</span> {
+    <span style=color:#e6db74>&#34;if&#34;</span> <span style=color:#e6db74>&#34;(&#34;</span> Parameters <span style=color:#e6db74>&#34;)&#34;</span> <span style=color:#f92672>..</span>.
+};
+
+Identifier: String <span style=color:#f92672>=</span> <span style=color:#f92672>&lt;</span>s:<span style=color:#a6e22e>r</span><span style=color:#e6db74>&#34;[_a-zA-Z][_a-zA-Z0-9]*&#34;</span><span style=color:#f92672>&gt;</span> <span style=color:#f92672>=&gt;</span> String::from(s);
+</code></pre></div><p>이때 anbiguity 에러가 발생하는데, if 키워드와 Identifier의 정규표현식이 중복되어 일어나는 문제인 것 같다.</p>
+<p>다음과 같이 해결한다.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-rust data-lang=rust>IfStatement: Box<span style=color:#f92672>&lt;</span>Expr<span style=color:#f92672>&gt;</span> <span style=color:#f92672>=</span> {
+    <span style=color:#e6db74>&#34;if&#34;</span> <span style=color:#e6db74>&#34;(&#34;</span> Parameters <span style=color:#e6db74>&#34;)&#34;</span> <span style=color:#f92672>..</span>.
+};
+
+Identifier: String <span style=color:#f92672>=</span> {
+    <span style=color:#f92672>&lt;</span>s:<span style=color:#a6e22e>r</span><span style=color:#e6db74>&#34;[_a-zA-Z][_a-zA-Z0-9]*&#34;</span><span style=color:#f92672>&gt;</span> <span style=color:#f92672>=&gt;</span> String::from(s),
+    <span style=color:#e6db74>&#34;if&#34;</span> <span style=color:#f92672>=&gt;</span> <span style=color:#e6db74>&#34;if&#34;</span>.to_owned(),
+};
+</code></pre></div><p>여기서 to_owned는 clone과 비슷하지만 String을 반환하는 함수이다. 자세히는 나도 잘 모르겠다.</p>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>
