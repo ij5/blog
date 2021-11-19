@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>sooda on Jaehee Lee</title>
+    <link>https://ehee.me/tags/sooda/</link>
+    <description>Recent content in sooda on Jaehee Lee</description>
+    <image>
+      <url>https://sooda.app/logo192.png</url>
+      <link>https://sooda.app/logo192.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Oct 2021 09:39:05 +0000</lastBuildDate><atom:link href="https://ehee.me/tags/sooda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go 웹소켓의 &#34;concurrent write to websocket connection&#34; 에러를 고치는 법</title>
+      <link>https://ehee.me/posts/fixing-golang-websocket-concurrent-error/</link>
+      <pubDate>Wed, 27 Oct 2021 09:39:05 +0000</pubDate>
+      
+      <guid>https://ehee.me/posts/fixing-golang-websocket-concurrent-error/</guid>
+      <description>go언어의 웹소켓은 동시에 read나 write 작업을 할 수 없다. read하기 전에 mutex.lock()을 호출하고 write가 끝날때 unlock을 호출하면 문제를 해결할 수 있다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ghost on Jaehee Lee</title>
+    <link>https://ehee.me/tags/ghost/</link>
+    <description>Recent content in ghost on Jaehee Lee</description>
+    <image>
+      <url>https://sooda.app/logo192.png</url>
+      <link>https://sooda.app/logo192.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 28 Oct 2021 00:20:45 +0000</lastBuildDate><atom:link href="https://ehee.me/tags/ghost/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ghost CMS로 포트폴리오 만들기</title>
+      <link>https://ehee.me/posts/create-a-portfolio-with-ghost/</link>
+      <pubDate>Thu, 28 Oct 2021 00:20:45 +0000</pubDate>
+      
+      <guid>https://ehee.me/posts/create-a-portfolio-with-ghost/</guid>
+      <description>Ghost를 선택하게 된 이유 처음에는 Apostrophe cms를 쓰려고 했다. 하지만 아직 개발이 완료되지 않은 것 같았고 기능도 얼마 없었기 때문에 선택지에서 제외했다.
+원래 ghost를 생각하고 있었는데, 다른 포트폴리오 cms는 없나? 하는 생각에 인터넷을 뒤졌다.
+그러나 디자인과 기능을 동시에 만족하는 cms는 ghost밖에 없었기에 포트폴리오 제작에 사용하였다.
+사용한 테마 ghost 웹사이트에는 테마 스토어가 있다.
+카테고리를 photography로 선택하고 무료 테마를 검색하니 맨 위에 london이라는 테마가 떴다. 디자인까지 완벽해서 바로 적용했다.</description>
+    </item>
+    
+  </channel>
+</rss>
