@@ -1,6 +1,7 @@
 ---
 title: 리액트 중첩된 함수 안에서 state 업데이트
 publish_date: 2021-10-29
+tags: ["코딩"]
 ---
 
 React의 함수형 컴포넌트에서 중첩된 함수 내 list state를 
