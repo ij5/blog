@@ -3,7 +3,8 @@ title: 오늘은 괜찮아
 publish_date: 2022-08-29
 tags: ["음악", "김세정"]
 ---
-.
+
+![](https://i.imgur.com/gQKHYBg.jpg)
 
 
 ***조금 이른 저녁노을  
