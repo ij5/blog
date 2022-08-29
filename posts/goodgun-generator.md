@@ -31,4 +31,59 @@ from flask import Flask, request, Response, send_file
 import math
 import numpy as np
 ```
-flask는 
+먼제 필요한 라이브러리들을 import 해준다.
+
+```python
+def get_deg(arr):
+    rad = math.atan2(arr[3]-arr[1],arr[2]-arr[0])
+    PI = math.pi
+    deg = (rad*180)/PI
+    return deg
+```
+두 점의 x, y 좌표를 이용하여 각도를 구하는 함수이다.
+
+```python
+detector = create_detector('yolov3', device='cpu')
+```
+랜드마크 감지는 yolo 라이브러리를 사용한다.
+
+```python
+gg = cv2.imread('gg.png', cv2.IMREAD_UNCHANGED)
+gg = cv2.cvtColor(gg, cv2.COLOR_BGRA2RGBA)
+```
+굳건이 이미지를 불러온다.
+내 실력이 부족한지, cv2가 이상한지는 잘 모르겠지만 이미지를 불러올 때 회전되어 불러오지는 경우가 있었다.
+png이기 때문에 `IMREAD_UNCHANGED`를 사용하면 알파 값 까지 불러와지는 것 같다.
+
+
+
+# generate 함수
+```python
+def generate(image_file: BytesIO) -> bytes:
+```
+generate 함수를 정의해준다. BytesIO 형식으로 이미지 파일이 주어지고, 생성된 이미지는 bytes 형식으로 리턴한다.
+
+```python
+preds = detector(img)
+```
+위에서 만든 detector를 사용하여 얼굴의 랜드마크를 감지한다.
+
+```python
+if len(preds) == 0:
+    return False
+```
+만약 감지된 얼굴이 하나도 없으면 False를 리턴한다.
+
+```python
+
+```
+
+`작성 중...`
+
+# 결과
+[DEMO](https://ij5-goodgun-streamlit-app-p3n4m8.streamlitapp.com)
+[Github](https://github.com/ij5/goodgun)
+
+streamlit에 배포했다.
+코드는 github에서 볼 수 있다.
+
