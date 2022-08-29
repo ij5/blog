@@ -21,7 +21,7 @@ tags: ["코딩", "인공지능"]
 결국 파이토치와 mmdet, mmpose를 사용한 랜드마크 인식 라이브러리를 찾았다.
 
 # 코딩
-```python
+```python3
 from io import BytesIO, StringIO
 import cv2
 from anime_face_detector import create_detector
