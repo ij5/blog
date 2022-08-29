@@ -2,9 +2,9 @@
 title: 물리학 I - 원자와 전기력
 publish_date: 2022-08-28
 tags: ["물리", "공부"]
+summary: 전자와 원자핵
 ---
 
-___전자와 원자핵___
 
 # 1. 원자 모형의 발전
 ![](https://i.imgur.com/yzuGJH8.png)
