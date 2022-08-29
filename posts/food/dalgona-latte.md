@@ -2,6 +2,7 @@
 title: 달고나 라떼에 대하여
 publish_date: 2022-08-29
 tags: ["음식"]
+summary: 맛있음
 ---
 
 ![달고나 라떼](https://i.imgur.com/iGc6A0y.jpg)

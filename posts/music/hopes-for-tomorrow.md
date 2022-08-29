@@ -2,6 +2,7 @@
 title: 오늘은 괜찮아
 publish_date: 2022-08-29
 tags: ["음악", "김세정"]
+summary: 듣기 좋은 노래
 ---
 
 ![](https://i.imgur.com/gQKHYBg.jpg)
