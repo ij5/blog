@@ -1,5 +1,5 @@
 /** @jsx h */
-import blog, { ga, redirects, h } from "https://deno.land/x/blog_page@0.4.3/blog.tsx";
+import blog, { ga, redirects, h } from "https://deno.land/x/blog_page@0.4.4/blog.tsx";
 
 blog({
   title:"디오니소스님 풍악을 울려라",
