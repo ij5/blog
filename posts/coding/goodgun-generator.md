@@ -22,7 +22,7 @@ summary: 굳건이 생성기 만드는 법
 결국 파이토치와 mmdet, mmpose를 사용한 랜드마크 인식 라이브러리를 찾았다.
 
 # 코딩
-```python3
+```python
 from io import BytesIO, StringIO
 import cv2
 from anime_face_detector import create_detector
