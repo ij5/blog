@@ -1,3 +1,11 @@
+---
+title: 미분
+publish_date: 2022-08-30
+tags: ["공부", "수학"]
+summary: asdf
+---
+
+
 <math xmlns='http://www.w3.org/1998/Math/MathML'>
   <mtable columnalign='left'>
     <mtr>
