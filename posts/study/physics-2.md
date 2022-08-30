@@ -1,7 +1,7 @@
 ---
 title: 물리학 I - 원자와 전기력
 publish_date: 2022-08-29
-tags: ["공부", "물리"]
+tags: ["공부", "물리학"]
 summary: 전기력
 ---
 
