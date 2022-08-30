@@ -7,8 +7,6 @@ og:image: https://i.imgur.com/FHHQjY4.png
 allow_iframes: true
 ---
 
-![](https://i.imgur.com/FHHQjY4.png)
-
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2pIUpMhHL6L9Z5lnKxJJr9?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
 저번에 스포티파이에서 대한민국 주간 top의 1위를 찍었길래  들어봤는데 처음엔 이게 무슨 장르지? 싶었다.
