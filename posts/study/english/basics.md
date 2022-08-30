@@ -21,17 +21,48 @@ summary: 영어공부
 
 자리에 따라 품사가 바뀐다.
 
-**단어**  
+## 주어 자리 (명사)
+
+**[단어]**  
 `The scientist` experimented with viruses.  
-**구**  
+**[구]**  
 `Experimenting on animals`<sup>(동명사구)</sup> is wrong.  
-**절**  
-<!-- `To experiment with viruses`<sup>(to부정사구)</sup> took a lot of time.   -->
+`To experiment with viruses`<sup>(to부정사구)</sup> took a lot of time.  
+**[절]**  
 `That [the man was rich]`<sup>(명사절)</sup> was true.  
 (What<sup>접속사</sup> the man said) was true.
 
+## 목적어 자리 (명사)
+
+**단어**  
 He loves `the girl`.  
+
+**구**  
 He avoids `looking at her`<sup>동명사구</sup>.  
 THey agreed `to work together`<sup>to부정사구, 명사구, 목적어</sup>.
 
+**절**  
 I believe that<sup>접속사</sup> you<sup>주어</sup> `will do`<sup>동사</sup> better next year.
+He remembered `what she said`.  
+He asked `if she would come in time`.  
+I wonder `whether there is any better way`.  
+He didn't know `when she would accept it`.  
+You can invite `whoever you like`.  
+
+## 보어 자리 (명사 / 형용사)
+
+주어와 '=' 관계를 가지고 있음.
+
+**단어**  
+He is `a scientist`.  
+This is `it`.  
+The milk tuned `sour`.  
+
+**구**  
+My hobby is `watching TV`.  
+My hobby is `to write a book report`.  
+The book is `on the table`.  
+He seems `to be rich`.  
+He is `singing a song`.  
+
+
