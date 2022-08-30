@@ -8,7 +8,8 @@ blog({
   avatarClass: "rounded-full",
   links: [
     {title: 'Email', url: 'mailto:jhlee838.public@gmail.com'},
-    {title: 'Github', url: 'https://github.com/ij5'}
+    {title: 'Github', url: 'https://github.com/ij5'},
+    {title: "Instagram", url: "https://instagram.com/hee.now"}
   ],
   author: "이재희",
   dateStyle: "full",
