@@ -4,7 +4,7 @@ import blog, { ga, redirects, h } from "https://deno.land/x/blog_page@0.4.4/blog
 blog({
   title:"디오니소스님 풍악을 울려라",
   description: "이재희의 블로그",
-  avatar: "https://deno-avatar.deno.dev/avatar/blog.svg",
+  avatar: "https://i.imgur.com/WS7Wt3G.png",
   avatarClass: "rounded-full",
   links: [
     {title: 'Email', url: 'mailto:jhlee838.public@gmail.com'},
