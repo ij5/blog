@@ -2,7 +2,7 @@
 import blog, { ga, redirects, h } from "https://deno.land/x/blog_page@0.4.4/blog.tsx";
 
 blog({
-  title:"디오니소스님 풍악을 울려라",
+  title:"너 때문에 흥이 다 깨져버렸으니까 책임져",
   description: "이재희의 블로그",
   avatar: "https://i.imgur.com/WS7Wt3G.png",
   avatarClass: "rounded-full",
