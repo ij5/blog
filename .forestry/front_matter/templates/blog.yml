@@ -1,0 +1,22 @@
+---
+label: blog
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: publish_date
+  label: publish_date
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: summary
+  label: summary
+- type: file
+  name: og:image
+  label: og:image
+- type: boolean
+  name: allow_iframes
+  label: allow_iframes
