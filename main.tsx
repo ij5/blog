@@ -1,5 +1,5 @@
 /** @jsx h */
-import blog, { ga, redirects, h } from "https://deno.land/x/blog_page@0.4.4/blog.tsx";
+import blog, { ga, redirects, h } from "https://deno.land/x/blog_page@0.4.5/blog.tsx";
 
 blog({
   title:"너 때문에 흥이 다 깨져버렸으니까 책임져",
