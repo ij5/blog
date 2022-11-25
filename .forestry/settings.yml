@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: directory
   path: posts
-  label: dir
+  label: blog
   create: all
   match: "**/*"
   new_doc_ext: md
